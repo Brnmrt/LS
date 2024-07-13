@@ -1,0 +1,30 @@
+/*Formatação da classe board*/
+.board {
+  position: relative;
+}
+
+/*Formatação da classe winner-overlay*/
+.winner-overlay {
+  display: flex;
+  flex: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: -8%;
+  justify-content: center;
+  font-size: 10em;
+  pointer-events: none; /* para a overlay nao tapar as jogadas */
+}
+.winner-overlay.X {
+  color: rgba(0, 102, 255, 0.749);
+}
+.winner-overlay.O {
+  color: rgba(255, 7, 7, 0.578);
+}
+.winner-overlay.E {
+  color: rgba(31, 145, 2, 0.675);
+}

@@ -1,0 +1,213 @@
+/* Define as classes .container1, .container2 e .container3 para mostrar os elementos como flexbox e centraliza-los horizontalmente */
+.game .container1,
+.game .container2,
+.game .container3 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Define as classes .game-board1, .game-board2, ..., .game-board9 com uma border preta sólida de 2px e margem 0 */
+.game-board1,
+.game-board2,
+.game-board3,
+.game-board4,
+.game-board5,
+.game-board6,
+.game-board7,
+.game-board8,
+.game-board9 {
+  border: black 2px solid;
+  margin: 0px;
+  justify-content: space-between;
+}
+
+/* Define a classe .ultimatetictactoe com margens superiores e inferiores para criar espaço em relação aos elementos a volta */
+.ultimatetictactoe {
+  margin-top: 5vh;
+  margin-bottom: 5.7vh;
+}
+
+/* Define a classe .board-row para mostrar os elementos como flexbox, centraliza-los horizontalmente e permitir mudar linhas conforme necessario */
+.board-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 120px;
+}
+
+/* Define a classe .quadrado com largura e altura de 40px, tamanho de fonte de 24px, negrito, fundo branco e border preta de 1px */
+.quadrado {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  background: #fff;
+  border: 1px solid #000;
+  transition: background-color 0.3s ease;
+}
+
+/* Define o estilo de hover para a classe .quadrado, alterando a cor de fundo e a cor do texto ao passar o mouse sobre o elemento */
+.quadrado:hover {
+  background-color: #3c8fa0;
+  color: #fff;
+}
+
+/* Estilo do cabeçalho com espaçamento interno, alinhamento centralizado, cor de fundo, tamanho de fonte e border */
+.header {
+  padding: 50px;
+  text-align: center;
+  background-color: #3c8fa0;
+  font-size: 40px;
+  border: solid #fff 1px;
+  color: white;
+}
+
+/* Define a classe .global para mostrar os elementos como flexbox numa única linha e centraliza-los horizontalmente */
+.global {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Estilo para a classe .status com border, border arredondada, cor de fundo, margens e alinhamento centralizado */
+.status {
+  border: #ffff solid;
+  border-radius: 3%;
+  color: #fff;
+  background-color: #3c8fa0;
+  margin-left: 10vw;
+  margin-right: 5vw;
+  text-align: center;
+  width: 220px;
+  height: 105px;
+  line-height: 200%;
+}
+
+/* Define a classe .nomeJogadores para mostrar os elementos como flexbox numa única coluna e centraliza-los verticalmente */
+.nomeJogadores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14vh;
+  margin-bottom: 14vh;
+}
+
+/* Define a classe .esquerda com margens para posicionar os elementos à esquerda */
+.esquerda {
+  margin-right: 5vw;
+  margin-top: 3vh;
+  margin-bottom: 2.5vh;
+}
+
+/* Define a classe .direita com margens para posicionar os elementos à direita */
+.direita {
+  margin-right: 3vw;
+  margin-top: 5vh;
+  margin-bottom: 2.5vh;
+}
+
+/* Estilo para a classe .temporizador com border, border arredondada, cor de fundo, margens e alinhamento centralizado */
+.temporizador {
+  border: #ffff solid;
+  border-radius: 3%;
+  color: #fff;
+  background-color: #3c8fa0;
+  margin-left: 10vw;
+  margin-right: 5vw;
+  text-align: center;
+  width: 220px;
+  height: 155px;
+  line-height: 200%;
+}
+
+/* Estilo para a classe .timer com margem superior para posicionar o temporizador */
+.timer {
+  margin-top: 5vh;
+}
+
+/* Estilo para os elementos de input com margens, border arredondada, preenchimento, largura, altura, tamanho de fonte e cor */
+.inputs {
+  margin: 15px;
+  border-radius: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  border: solid #000 3px;
+}
+
+/* Estilo para a classe .textoLogin com cor e negrito */
+.textoLogin {
+  color: #3c8fa0;
+  font-weight: bold;
+}
+
+/* Estilo para os botões com margens, cor de fundo, cor do texto, border arredondada, preenchimento, largura, altura, tamanho de fonte, negrito e cursor personalizado */
+.botao {
+  margin: 15px;
+  background-color: #3c8fa0;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  width: 320px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilo de hover para os botões, alterando a cor de fundo e a cor do texto ao passar o mouse sobre o elemento */
+.botao:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Estilo para o botão .botao2 com margens, cor de fundo, cor do texto, border arredondada, alinhamento centralizado e largura fixa */
+.botao2 {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 30px;
+  margin-left: 4vw;
+  margin-right: 5vw;
+  text-align: center;
+  margin-top: 4vh;
+  border: #fff;
+  width: 100px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilo de hover para o botão .botao2, alterando a cor de fundo e a cor do texto ao passar o mouse sobre o elemento */
+.botao2:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Estilo para o subfooter com alinhamento centralizado e margens */
+.subFooter {
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 0vh;
+}
+
+/* Estilo para o footer com fonte, alinhamento centralizado, tamanho de fonte, espaçamento interno, peso da fonte, cor de fundo, border e cor do texto */
+.footer {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  margin-bottom: 0vh;
+  padding: 4.3vh;
+  font-weight: bold;
+  background-color: #3c8fa0;
+  border: solid #fff 1px;
+  color: #fff;
+}
